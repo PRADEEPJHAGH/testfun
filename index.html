@@ -1,94 +1,127 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durga Pooja Samiti, Dabhari</title>
-    <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #fff8f0; }
-        header { background-color: #c62828; color: white; padding: 20px; text-align: center; }
-        nav { background: #8e0000; text-align: center; }
-        nav a { color: white; padding: 15px 20px; display: inline-block; text-decoration: none; }
-        section { padding: 20px; }
-        .gallery img { width: 200px; margin: 10px; border-radius: 10px; }
-        .donation img { width: 300px; border: 2px solid #c62828; border-radius: 10px; }
-        form { max-width: 400px; margin: auto; background: #fff0f0; padding: 20px; border-radius: 10px; }
-        input, textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        footer { background: #8e0000; color: white; text-align: center; padding: 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Durga Pooja Samiti, Dabhari</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background-color: #fff8f0; }
+    header { background-color: #c62828; color: white; padding: 20px; text-align: center; }
+    nav { background: #8e0000; text-align: center; }
+    nav a { color: white; padding: 15px 20px; display: inline-block; text-decoration: none; }
+    section { padding: 20px; }
+    .gallery img { width: 200px; margin: 10px; border-radius: 10px; }
+    .donation img { width: 300px; border: 2px solid #c62828; border-radius: 10px; }
+    form { max-width: 400px; margin: auto; background: #fff0f0; padding: 20px; border-radius: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    footer { background: #8e0000; color: white; text-align: center; padding: 10px; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Durga Pooja Samiti, Dabhari</h1>
-        <p>Shubh Navratri! Aapka hardik swagat hai.</p>
-    </header>
-    <nav>
-        <a href="#language">Bhasha</a>
-        <a href="#about">Parichay</a>
-        <a href="#schedule">Pooja Karyakram</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#donation">Chanda</a>
-        <a href="#volunteer">Volunteer</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <h1 data-lang="hi">दुर्गा पूजा समिति, डभरी</h1>
+    <h1 data-lang="en" hidden>Durga Pooja Samiti, Dabhari</h1>
+    <h1 data-lang="mai" hidden>दुर्गा पूजा समिती, डभरी</h1>
+    <p data-lang="hi">शुभ नवरात्रि! आपका हार्दिक स्वागत है।</p>
+    <p data-lang="en" hidden>Happy Navratri! You are warmly welcomed.</p>
+    <p data-lang="mai" hidden>शुभ नवदुर्गा! अहाँक हार्दिक स्वागत अछि।</p>
+  </header>
 
-    <section id="language">
-        <h2>Bhasha Chayan / Language Selection / भाषा चयन</h2>
-        <p>Kripya apni pasand ki bhasha chunein: / Please select your preferred language:</p>
-        <form>
-            <input type="radio" name="language" value="hindi" checked> हिंदी (Hindi)<br>
-            <input type="radio" name="language" value="english"> English<br>
-            <input type="radio" name="language" value="maithili"> मैथिली (Maithili)<br>
-        </form>
-        <p><em>Note: Language switching functionality coming soon.</em></p>
-    </section>
+  <nav>
+    <a href="#language">भाषा / Language</a>
+    <a href="#about">परिचय</a>
+    <a href="#schedule">कार्यक्रम</a>
+    <a href="#gallery">गेलरी</a>
+    <a href="#donation">चंदा</a>
+    <a href="#volunteer">सेवा</a>
+    <a href="#contact">संपर्क</a>
+  </nav>
 
-    <section id="about">
-        <h2>Parichay</h2>
-        <p>Durga Pooja Samiti, Dabhari dwara har saal Navratri ke ausar par bhavya Durga Pooja ka aayojan kiya jata hai. Ismein poore gaon ke log bhag lete hain aur bhakti aur utsav ka mahol hota hai.</p>
-    </section>
+  <section id="language">
+    <h2>भाषा चयन / Language Selection / भाषा चयन</h2>
+    <form>
+      <input type="radio" name="lang" value="hi" checked> हिंदी
+      <input type="radio" name="lang" value="en"> English
+      <input type="radio" name="lang" value="mai"> मैथिली
+    </form>
+  </section>
 
-    <section id="schedule">
-        <h2>Pooja Karyakram</h2>
-        <ul>
-            <li>Saptami - Murti Sthapna & Kalash Sthapna</li>
-            <li>Ashtami - Maha Aarti & Bhog</li>
-            <li>Navami - Kanya Bhoj & Visarjan Yatra</li>
-        </ul>
-    </section>
+  <section id="about">
+    <h2 data-lang="hi">परिचय</h2>
+    <h2 data-lang="en" hidden>About Us</h2>
+    <h2 data-lang="mai" hidden>परिचय</h2>
+    <p data-lang="hi">हर साल डभरी गांव में भव्य दुर्गा पूजा का आयोजन होता है।</p>
+    <p data-lang="en" hidden>A grand Durga Pooja is organized every year in Dabhari village.</p>
+    <p data-lang="mai" hidden>प्रत्येक बरख डभरी गाम मे भव्य दुर्गा पूजा होइत अछि।</p>
+  </section>
 
-    <section id="gallery" class="gallery">
-        <h2>Gallery</h2>
-        <img src="https://via.placeholder.com/200x150" alt="Pooja 1">
-        <img src="https://via.placeholder.com/200x150" alt="Pooja 2">
-        <img src="https://via.placeholder.com/200x150" alt="Pooja 3">
-    </section>
+  <section id="schedule">
+    <h2 data-lang="hi">पूजा कार्यक्रम</h2>
+    <h2 data-lang="en" hidden>Pooja Schedule</h2>
+    <h2 data-lang="mai" hidden>पूजा कार्यक्रम</h2>
+    <ul>
+      <li>Saptami - मूर्ति स्थापना</li>
+      <li>Ashtami - महा आरती</li>
+      <li>Navami - कन्या भोज और विसर्जन</li>
+    </ul>
+  </section>
 
-    <section id="donation" class="donation">
-        <h2>Online Chanda</h2>
-        <p>Aap QR code scan karke apna yogdan de sakte hain:</p>
-        <img src="qr-placeholder.png" alt="UPI QR Code">
-        <p><strong>UPI ID:</strong> example@upi</p>
-    </section>
+  <section id="gallery" class="gallery">
+    <h2 data-lang="hi">गेलरी</h2>
+    <h2 data-lang="en" hidden>Gallery</h2>
+    <h2 data-lang="mai" hidden>गेलरी</h2>
+    <img src="https://via.placeholder.com/200x150" alt="Pooja 1">
+    <img src="https://via.placeholder.com/200x150" alt="Pooja 2">
+    <img src="https://via.placeholder.com/200x150" alt="Pooja 3">
+  </section>
 
-    <section id="volunteer">
-        <h2>Volunteer Form</h2>
-        <form>
-            <input type="text" placeholder="Apka Naam" required>
-            <input type="tel" placeholder="Mobile Number" required>
-            <textarea placeholder="Seva ka vishay (e.g. decoration, bhajan)"></textarea>
-            <input type="submit" value="Bhejein">
-        </form>
-    </section>
+  <section id="donation" class="donation">
+    <h2 data-lang="hi">ऑनलाइन चंदा</h2>
+    <h2 data-lang="en" hidden>Online Donation</h2>
+    <h2 data-lang="mai" hidden>ऑनलाइन चंदा</h2>
+    <p data-lang="hi">कृपया QR कोड स्कैन करें:</p>
+    <p data-lang="en" hidden>Please scan the QR code to donate:</p>
+    <p data-lang="mai" hidden>QR कोड स्कैन करू:</p>
+    <img src="qr-placeholder.png" alt="UPI QR Code">
+    <p><strong>UPI ID:</strong> example@upi</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Samiti Sampark: 9876543210</p>
-        <p>Location: Dabhari Gaon, Bihar</p>
-    </section>
+  <section id="volunteer">
+    <h2 data-lang="hi">सेवा फॉर्म</h2>
+    <h2 data-lang="en" hidden>Volunteer Form</h2>
+    <h2 data-lang="mai" hidden>सेवक फॉर्म</h2>
+    <form>
+      <input type="text" placeholder="आपका नाम" required>
+      <input type="tel" placeholder="मोबाइल नंबर" required>
+      <textarea placeholder="सेवा का विषय (जैसे सजावट, भजन)"></textarea>
+      <input type="submit" value="भेजें">
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Durga Pooja Samiti, Dabhari. Sabhi adhikar surakshit.</p>
-    </footer>
+  <section id="contact">
+    <h2 data-lang="hi">संपर्क</h2>
+    <h2 data-lang="en" hidden>Contact</h2>
+    <h2 data-lang="mai" hidden>संपर्क</h2>
+    <p data-lang="hi">समिति संपर्क: 9876543210</p>
+    <p data-lang="en" hidden>Committee Contact: 9876543210</p>
+    <p data-lang="mai" hidden>समिती संपर्क: 9876543210</p>
+    <p>Location: Dabhari Gaon, Bihar</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Durga Pooja Samiti, Dabhari</p>
+  </footer>
+
+  <script>
+    const radios = document.querySelectorAll('input[name="lang"]');
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        const selectedLang = radio.value;
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.hidden = el.getAttribute('data-lang') !== selectedLang;
+        });
+      });
+    });
+  </script>
 </body>
 </html>
