@@ -136,23 +136,3 @@
   </script>
 </body>
 </html>
-
-
-
-<section id="donation" style="padding: 40px; background-color: #fff3e0; text-align: center;">
-  <h2 id="donationTitle">Support Durga Puja</h2>
-  <p id="donationDesc">Your contribution helps us organize grand celebrations and serve the community.</p>
-
-  <div style="margin: 20px 0;">
-    <img src="qr-code.png" alt="Donate via QR Code" style="max-width: 200px;" />
-    <p id="scanNote">Scan the QR code using any UPI app to donate</p>
-  </div>
-
-  <p><strong id="upiLabel">UPI ID:</strong> <span id="upiValue">durga@upi</span></p>
-</section>
-
-
-document.getElementById("donationTitle").innerText = isHindi ? "दुर्गा पूजा के लिए योगदान दें" : "Support Durga Puja";
-document.getElementById("donationDesc").innerText = isHindi ? "आपका योगदान हमें भव्य आयोजन करने और समुदाय की सेवा करने में मदद करता है।" : "Your contribution helps us organize grand celebrations and serve the community.";
-document.getElementById("scanNote").innerText = isHindi ? "किसी भी UPI ऐप से QR कोड स्कैन करें" : "Scan the QR code using any UPI app to donate";
-document.getElementById("upiLabel").innerText = isHindi ? "यूपीआई आईडी:" : "UPI ID:";
