@@ -1,127 +1,146 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Durga Pooja Samiti, Dabhari</title>
-  <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background-color: #fff8f0; }
-    header { background-color: #c62828; color: white; padding: 20px; text-align: center; }
-    nav { background: #8e0000; text-align: center; }
-    nav a { color: white; padding: 15px 20px; display: inline-block; text-decoration: none; }
-    section { padding: 20px; }
-    .gallery img { width: 200px; margin: 10px; border-radius: 10px; }
-    .donation img { width: 300px; border: 2px solid #c62828; border-radius: 10px; }
-    form { max-width: 400px; margin: auto; background: #fff0f0; padding: 20px; border-radius: 10px; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; }
-    footer { background: #8e0000; color: white; text-align: center; padding: 10px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maa Durga Mandir, Dabhari</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1 data-lang="hi">दुर्गा पूजा समिति, डभरी</h1>
-    <h1 data-lang="en" hidden>Durga Pooja Samiti, Dabhari</h1>
-    <h1 data-lang="mai" hidden>दुर्गा पूजा समिती, डभरी</h1>
-    <p data-lang="hi">शुभ नवरात्रि! आपका हार्दिक स्वागत है।</p>
-    <p data-lang="en" hidden>Happy Navratri! You are warmly welcomed.</p>
-    <p data-lang="mai" hidden>शुभ नवदुर्गा! अहाँक हार्दिक स्वागत अछि।</p>
+    <h1>Maa Durga Mandir, Dabhari</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#aarti">Aarti</a></li>
+        <li><a href="#puja">Puja Booking</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#live">Live</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#language">भाषा / Language</a>
-    <a href="#about">परिचय</a>
-    <a href="#schedule">कार्यक्रम</a>
-    <a href="#gallery">गेलरी</a>
-    <a href="#donation">चंदा</a>
-    <a href="#volunteer">सेवा</a>
-    <a href="#contact">संपर्क</a>
-  </nav>
-
-  <section id="language">
-    <h2>भाषा चयन / Language Selection / भाषा चयन</h2>
-    <form>
-      <input type="radio" name="lang" value="hi" checked> हिंदी
-      <input type="radio" name="lang" value="en"> English
-      <input type="radio" name="lang" value="mai"> मैथिली
-    </form>
-  </section>
-
   <section id="about">
-    <h2 data-lang="hi">परिचय</h2>
-    <h2 data-lang="en" hidden>About Us</h2>
-    <h2 data-lang="mai" hidden>परिचय</h2>
-    <p data-lang="hi">हर साल डभरी गांव में भव्य दुर्गा पूजा का आयोजन होता है।</p>
-    <p data-lang="en" hidden>A grand Durga Pooja is organized every year in Dabhari village.</p>
-    <p data-lang="mai" hidden>प्रत्येक बरख डभरी गाम मे भव्य दुर्गा पूजा होइत अछि।</p>
+    <h2>About the Temple</h2>
+    <p>Welcome to Maa Durga Mandir in Dabhari village. This temple is a divine place of devotion and peace.</p>
   </section>
 
-  <section id="schedule">
-    <h2 data-lang="hi">पूजा कार्यक्रम</h2>
-    <h2 data-lang="en" hidden>Pooja Schedule</h2>
-    <h2 data-lang="mai" hidden>पूजा कार्यक्रम</h2>
+  <section id="aarti">
+    <h2>Daily Aarti Timings</h2>
     <ul>
-      <li>Saptami - मूर्ति स्थापना</li>
-      <li>Ashtami - महा आरती</li>
-      <li>Navami - कन्या भोज और विसर्जन</li>
+      <li>Morning Aarti: 6:00 AM</li>
+      <li>Evening Aarti: 7:00 PM</li>
     </ul>
   </section>
 
-  <section id="gallery" class="gallery">
-    <h2 data-lang="hi">गेलरी</h2>
-    <h2 data-lang="en" hidden>Gallery</h2>
-    <h2 data-lang="mai" hidden>गेलरी</h2>
-    <img src="https://via.placeholder.com/200x150" alt="Pooja 1">
-    <img src="https://via.placeholder.com/200x150" alt="Pooja 2">
-    <img src="https://via.placeholder.com/200x150" alt="Pooja 3">
+  <section id="puja">
+    <h2>Puja Booking</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="date" required>
+      <input type="text" placeholder="Puja Type" required>
+      <button type="submit">Book Puja</button>
+    </form>
   </section>
 
-  <section id="donation" class="donation">
-    <h2 data-lang="hi">ऑनलाइन चंदा</h2>
-    <h2 data-lang="en" hidden>Online Donation</h2>
-    <h2 data-lang="mai" hidden>ऑनलाइन चंदा</h2>
-    <p data-lang="hi">कृपया QR कोड स्कैन करें:</p>
-    <p data-lang="en" hidden>Please scan the QR code to donate:</p>
-    <p data-lang="mai" hidden>QR कोड स्कैन करू:</p>
-    <img src="qr-placeholder.png" alt="UPI QR Code">
-    <p><strong>UPI ID:</strong> example@upi</p>
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <p>Navratri Mahotsav from Oct 1 to Oct 9</p>
+  </section>
+
+  <section id="donate">
+    <h2>Donate</h2>
+    <p>Scan the QR code below to donate:</p>
+    <img src="qr-placeholder.png" alt="Donation QR Code" width="200">
+  </section>
+
+  <section id="live">
+    <h2>Live Darshan</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <img src="mandir1.jpg" alt="Temple Image 1" width="200">
+    <img src="mandir2.jpg" alt="Temple Image 2" width="200">
   </section>
 
   <section id="volunteer">
-    <h2 data-lang="hi">सेवा फॉर्म</h2>
-    <h2 data-lang="en" hidden>Volunteer Form</h2>
-    <h2 data-lang="mai" hidden>सेवक फॉर्म</h2>
+    <h2>Volunteer Registration</h2>
     <form>
-      <input type="text" placeholder="आपका नाम" required>
-      <input type="tel" placeholder="मोबाइल नंबर" required>
-      <textarea placeholder="सेवा का विषय (जैसे सजावट, भजन)"></textarea>
-      <input type="submit" value="भेजें">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Register</button>
     </form>
   </section>
 
   <section id="contact">
-    <h2 data-lang="hi">संपर्क</h2>
-    <h2 data-lang="en" hidden>Contact</h2>
-    <h2 data-lang="mai" hidden>संपर्क</h2>
-    <p data-lang="hi">समिति संपर्क: 9876543210</p>
-    <p data-lang="en" hidden>Committee Contact: 9876543210</p>
-    <p data-lang="mai" hidden>समिती संपर्क: 9876543210</p>
-    <p>Location: Dabhari Gaon, Bihar</p>
+    <h2>Contact Us</h2>
+    <p>Address: Maa Durga Mandir, Dabhari, Bihar</p>
+    <iframe src="https://maps.google.com/maps?q=dabhari%20bihar&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;"></iframe>
   </section>
 
   <footer>
-    <p>&copy; 2025 Durga Pooja Samiti, Dabhari</p>
+    <p>&copy; 2025 Maa Durga Mandir, Dabhari</p>
   </footer>
-
-  <script>
-    const radios = document.querySelectorAll('input[name="lang"]');
-    radios.forEach(radio => {
-      radio.addEventListener('change', () => {
-        const selectedLang = radio.value;
-        document.querySelectorAll('[data-lang]').forEach(el => {
-          el.hidden = el.getAttribute('data-lang') !== selectedLang;
-        });
-      });
-    });
-  </script>
 </body>
 </html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fffaf0;
+  color: #333;
+}
+
+header {
+  background: maroon;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #8b0000;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0.5em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: #b22222;
+  border-radius: 5px;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #ddd;
+}
+
+form input, form button {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 300px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
