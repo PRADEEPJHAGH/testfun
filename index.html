@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Durga Mandir - Dabhari</title>
+  <title>Durga Puja Committee</title>
   <style>
     body {
       margin: 0;
@@ -88,7 +88,7 @@
 <body>
   <header>
     <div class="top-bar">
-      <h1 id="siteTitle">Durga Mandir, Dabhari</h1>
+      <h1 id="siteTitle">Durga Puja Committee</h1>
       <button id="langToggle">हिंदी</button>
     </div>
     <nav>
@@ -112,7 +112,7 @@
   </section>
 
   <footer>
-    <p id="footerText">&copy; 2025 Durga Mandir, Dabhari | Designed for Devotees</p>
+    <p id="footerText">&copy; 2025 Durga Puja Committee | Designed for Devotees</p>
   </footer>
 
   <script>
@@ -123,11 +123,11 @@
       isHindi = !isHindi;
       toggleBtn.innerText = isHindi ? "English" : "हिंदी";
 
-      document.getElementById("siteTitle").innerText = isHindi ? "दुर्गा मंदिर, डाभरी" : "Durga Mandir, Dabhari";
+      document.getElementById("siteTitle").innerText = isHindi ? "दुर्गा पूजा समिति" : "Durga Puja Committee";
       document.getElementById("heroTitle").innerText = isHindi ? "दुर्गा पूजा 2025 में आपका स्वागत है" : "Welcome to Durga Puja 2025";
       document.getElementById("heroText").innerText = isHindi ? "भक्ति, परंपरा और संस्कृति का उत्सव मनाएं।" : "Join us in celebrating devotion, tradition, and culture.";
       document.getElementById("viewEvents").innerText = isHindi ? "कार्यक्रम देखें" : "View Events";
-      document.getElementById("footerText").innerText = isHindi ? "© 2025 दुर्गा मंदिर, डाभरी | भक्तों के लिए डिज़ाइन किया गया" : "© 2025 Durga Mandir, Dabhari | Designed for Devotees";
+      document.getElementById("footerText").innerText = isHindi ? "© 2025 दुर्गा पूजा समिति | भक्तों के लिए डिज़ाइन किया गया" : "© 2025 Durga Puja Committee | Designed for Devotees";
 
       document.querySelectorAll(".menu").forEach(link => {
         link.innerText = isHindi ? link.dataset.hi : link.dataset.en;
