@@ -1,146 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maa Durga Mandir, Dabhari</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Durga Mandir - Dabhari</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+    }
+
+    .top-bar {
+      background-color: maroon;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar button {
+      background: orange;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    nav {
+      background-color: #f3e5f5;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: maroon;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: url('durga.jpg') no-repeat center center/cover;
+      color: white;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: orange;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: maroon;
+      color: white;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Maa Durga Mandir, Dabhari</h1>
+    <div class="top-bar">
+      <h1>Durga Mandir, Dabhari</h1>
+      <button id="langToggle">हिंदी</button>
+    </div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#aarti">Aarti</a></li>
-        <li><a href="#puja">Puja Booking</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#donate">Donate</a></li>
-        <li><a href="#live">Live</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Event Schedule</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Live Stream</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">Puja Booking</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About the Temple</h2>
-    <p>Welcome to Maa Durga Mandir in Dabhari village. This temple is a divine place of devotion and peace.</p>
-  </section>
-
-  <section id="aarti">
-    <h2>Daily Aarti Timings</h2>
-    <ul>
-      <li>Morning Aarti: 6:00 AM</li>
-      <li>Evening Aarti: 7:00 PM</li>
-    </ul>
-  </section>
-
-  <section id="puja">
-    <h2>Puja Booking</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="date" required>
-      <input type="text" placeholder="Puja Type" required>
-      <button type="submit">Book Puja</button>
-    </form>
-  </section>
-
-  <section id="events">
-    <h2>Upcoming Events</h2>
-    <p>Navratri Mahotsav from Oct 1 to Oct 9</p>
-  </section>
-
-  <section id="donate">
-    <h2>Donate</h2>
-    <p>Scan the QR code below to donate:</p>
-    <img src="qr-placeholder.png" alt="Donation QR Code" width="200">
-  </section>
-
-  <section id="live">
-    <h2>Live Darshan</h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-  </section>
-
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <img src="mandir1.jpg" alt="Temple Image 1" width="200">
-    <img src="mandir2.jpg" alt="Temple Image 2" width="200">
-  </section>
-
-  <section id="volunteer">
-    <h2>Volunteer Registration</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <button type="submit">Register</button>
-    </form>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Address: Maa Durga Mandir, Dabhari, Bihar</p>
-    <iframe src="https://maps.google.com/maps?q=dabhari%20bihar&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;"></iframe>
+  <section class="hero">
+    <h2>Welcome to Durga Puja 2025</h2>
+    <p>Join us in celebrating devotion, tradition, and culture.</p>
+    <a href="#event">View Events</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Maa Durga Mandir, Dabhari</p>
+    <p>&copy; 2025 Durga Mandir, Dabhari | Designed for Devotees</p>
   </footer>
+
+  <script>
+    // Language toggle placeholder
+    document.getElementById("langToggle").onclick = function () {
+      alert("Language switch feature coming soon!");
+    };
+  </script>
 </body>
 </html>
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #fffaf0;
-  color: #333;
-}
-
-header {
-  background: maroon;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: #8b0000;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0.5em;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  background: #b22222;
-  border-radius: 5px;
-}
-
-section {
-  padding: 2em;
-  border-bottom: 1px solid #ddd;
-}
-
-form input, form button {
-  margin: 0.5em 0;
-  padding: 0.5em;
-  width: 100%;
-  max-width: 300px;
-}
-
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-}
