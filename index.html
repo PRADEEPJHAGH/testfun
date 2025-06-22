@@ -1,138 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Durga Puja Committee</title>
+  <meta charset="UTF-8">
+  <title>Electricity Consumption Report</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff8f0;
+      background: #f9f9f9;
+      padding: 20px;
     }
-
-    .top-bar {
-      background-color: maroon;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .top-bar button {
-      background: orange;
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-
-    nav {
-      background-color: #f3e5f5;
+    h2 {
       text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 10px;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      margin: 10px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: maroon;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/9/9f/Durga_Maa_image.jpg') no-repeat center center/cover;
-      color: white;
-      background-blend-mode: multiply;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero h2 {
-      font-size: 2.5em;
       margin-bottom: 20px;
     }
-
-    .hero a {
-      display: inline-block;
-      padding: 12px 20px;
-      background-color: orange;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
+    table {
+      width: 400px;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    footer {
-      text-align: center;
-      background-color: maroon;
-      color: white;
+    td {
+      border: 1px solid #ccc;
       padding: 10px;
+      font-size: 15px;
+    }
+    td:first-child {
+      font-weight: bold;
+      background-color: #f0f0f0;
+      width: 60%;
+    }
+    td:last-child {
+      text-align: right;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <h1 id="siteTitle">Durga Puja Committee</h1>
-      <button id="langToggle">हिंदी</button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#" class="menu" data-en="Home" data-hi="मुख्य पृष्ठ">Home</a></li>
-        <li><a href="#" class="menu" data-en="Event Schedule" data-hi="कार्यक्रम">Event Schedule</a></li>
-        <li><a href="#" class="menu" data-en="Donate" data-hi="दान करें">Donate</a></li>
-        <li><a href="#" class="menu" data-en="Gallery" data-hi="गैलरी">Gallery</a></li>
-        <li><a href="#" class="menu" data-en="Live Stream" data-hi="लाइव स्ट्रीम">Live Stream</a></li>
-        <li><a href="#" class="menu" data-en="Volunteer" data-hi="सेवक पंजीकरण">Volunteer</a></li>
-        <li><a href="#" class="menu" data-en="Puja Booking" data-hi="पूजा बुकिंग">Puja Booking</a></li>
-        <li><a href="#" class="menu" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2 id="heroTitle">Welcome to Durga Puja 2025</h2>
-    <p id="heroText">Join us in celebrating devotion, tradition, and culture.</p>
-    <a href="#event" id="viewEvents">View Events</a>
-  </section>
+  <h2>Electricity Consumption Report – 01-06-2025</h2>
 
-  <footer>
-    <p id="footerText">&copy; 2025 Durga Puja Committee | Designed for Devotees</p>
-  </footer>
+  <table>
+    <tr><td>Consumption Date</td><td>01-06-2025</td></tr>
+    <tr><td>Fixed Charges</td><td>₹1.33</td></tr>
+    <tr><td>Energy Charges</td><td>₹8.70</td></tr>
+    <tr><td>Meter Rent</td><td>₹0.00</td></tr>
+    <tr><td>Installment</td><td>₹0.00</td></tr>
+    <tr><td>Arrear Pay</td><td>₹0.00</td></tr>
+    <tr><td>Recharge Amount</td><td>₹0.00</td></tr>
+    <tr><td>Bill Settlement</td><td>₹0.00</td></tr>
+    <tr><td>Temporary Deferment</td><td>₹0.00</td></tr>
+    <tr><td>Recharge Cancelation</td><td>₹0.00</td></tr>
+    <tr><td>Invoice Settlement</td><td>₹0.00</td></tr>
+    <tr><td>Opening Balance</td><td>₹112.39</td></tr>
+    <tr><td>Closing Balance</td><td>₹102.36</td></tr>
+    <tr><td>Current Reading</td><td>30</td></tr>
+    <tr><td>Previous Reading</td><td>27</td></tr>
+    <tr><td>Day Consumption</td><td>3 kWh</td></tr>
+    <tr><td>Total Deduction</td><td>₹10.03</td></tr>
+  </table>
 
-  <script>
-    let isHindi = false;
-    const toggleBtn = document.getElementById("langToggle");
-
-    toggleBtn.addEventListener("click", () => {
-      isHindi = !isHindi;
-      toggleBtn.innerText = isHindi ? "English" : "हिंदी";
-
-      document.getElementById("siteTitle").innerText = isHindi ? "दुर्गा पूजा समिति" : "Durga Puja Committee";
-      document.getElementById("heroTitle").innerText = isHindi ? "दुर्गा पूजा 2025 में आपका स्वागत है" : "Welcome to Durga Puja 2025";
-      document.getElementById("heroText").innerText = isHindi ? "भक्ति, परंपरा और संस्कृति का उत्सव मनाएं।" : "Join us in celebrating devotion, tradition, and culture.";
-      document.getElementById("viewEvents").innerText = isHindi ? "कार्यक्रम देखें" : "View Events";
-      document.getElementById("footerText").innerText = isHindi ? "© 2025 दुर्गा पूजा समिति | भक्तों के लिए डिज़ाइन किया गया" : "© 2025 Durga Puja Committee | Designed for Devotees";
-
-      document.querySelectorAll(".menu").forEach(link => {
-        link.innerText = isHindi ? link.dataset.hi : link.dataset.en;
-      });
-    });
-  </script>
 </body>
 </html>
